@@ -1,0 +1,193 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <title>
+        TBedwell - Coding Projects
+    </title>
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: Courier New, Courier, monospace;
+            font-size: 1.2vw;
+            color: #2B4141;
+            margin: 0;
+        }
+
+        .follow {
+            position: fixed;
+            width: 100%;
+            z-index: 2;
+        }
+
+        .header {
+            padding: 5px;
+            text-align: center;
+            background: #A6DAD7;
+            position: absolute;
+            width: 100%;
+        }
+
+        .navbar {
+            overflow: hidden;
+            background-color: #A6DAD7;
+            width: 100%;
+            position: absolute;
+            margin-top: 85px;
+        }
+
+            .navbar a {
+                float: left;
+                display: block;
+                text-align: center;
+                color: #2B4141;
+                padding: 20px 25px;
+                text-decoration: none;
+            }
+
+                .navbar a.click:hover {
+                    background-color: #293132;
+                    color: #A6DAD7;
+                }
+
+        .row {
+            display: flex;
+            flex-wrap: wrap;
+        }
+
+        .side {
+            flex: 20%;
+            background-color: #D3EDEB;
+            padding: 20px;
+            font-size: 1vw;
+        }
+
+        .main {
+            flex: 80%;
+            background-color: white;
+            padding: 20px;
+        }
+
+        video {
+            width: 80%;
+        }
+
+        .dropbtn {
+            display: block;
+            text-align: center;
+            color: #2B4141;
+            padding: 20px 25px;
+            text-decoration: none;
+        }
+
+        .dropdown {
+            display: inline-block;
+            float: left;
+        }
+
+        .dropdown-content {
+            display: none;
+            position: fixed;
+            z-index: 1;
+        }
+
+            .dropdown-content a {
+                width: inherit;
+                background-color: #A6DAD7;
+            }
+
+        .dropdown:hover .dropdown-content {
+            display: block;
+        }
+
+        .dropdown:hover .dropbtn {
+            background-color: #293132;
+            color: #A6DAD7;
+        }
+
+        .GameDiv {
+            display: none;
+        }
+
+        .LoadGame {
+            width: 100px;
+            height: 75px;
+            float: left;
+            display: block;
+            text-align: center;
+            color: #2B4141;
+            padding: 20px 25px;
+            text-decoration: none;
+        }
+    </style>
+
+    <script src="LogicGates/UnityLoader.js"></script>
+</head>
+<body>
+    <script>
+        function RevealDiv(DivID) {
+            var x = document.getElementById(DivID);
+            x.style.display = "block";
+            UnityLoader.instantiate("unityContainer", DivID + "/0.2.json");
+        }
+    </script>
+
+    <div class="follow">
+        <div class="header">
+            <a href="file:///C:/Users/thoma/Desktop/TBedwell%20Website/index.html"><img src="Logo.png" alt="TBedwell" height="75"></a>
+        </div>
+    </div>
+    <div class="follow">
+        <div class="navbar">
+            <a href="file:///C:/Users/thoma/Desktop/TBedwell%20Website/index.html" class="click">About Me</a>
+            <a href="file:///C:/Users/thoma/Desktop/TBedwell%20Website/Ariel_Photography/index.html" class="click">Ariel Photography</a>
+            <a href="file:///C:/Users/thoma/Desktop/TBedwell%20Website/Drone_Short_Films/index.html" class="click">Drone Short Films</a>
+            <a href="file:///C:/Users/thoma/Desktop/TBedwell%20Website/Coding_Projects/index.html" class="click">Coding Projects</a>
+            <a href="file:///C:/Users/thoma/Desktop/TBedwell%20Website/Piano/index.html" class="click">Piano</a>
+
+        </div>
+    </div>
+
+    <div style="padding-top: 140px; background-color: #D3EDEB;"></div>
+
+    <div class="row">
+        <div class="side">
+        </div>
+        <div class="main" style="text-align: center;">
+            <h2>Coding Projects</h2>
+        </div>
+    </div>
+
+    <div class="row">
+        <div class="side">
+            <div>
+                <h3>Logic Gates Simulator</h3>
+                <p id="LogicGates" style="display: none;">Instructions...</p>
+            </div>
+        </div>
+        <div class="main" style="text-align: center;">
+            <button onclick="RevealDiv('LogicGates')" class="LoadGame">Try it</button>
+            <div id="LogicGates" class="GameDiv">
+                <div id="unityContainer" style="width: 960px; height: 600px; margin: auto"></div>
+            </div>
+        </div>
+    </div>
+    <div class="row">
+        <div class="side">
+            <div>
+                <h3>Jumpy Road</h3>
+                <p id="Jumpy" style="display: none;">Instructions...</p>
+            </div>
+        </div>
+        <div class="main" style="text-align: center;">
+            <button onclick="RevealDiv('Jumpy')" class="LoadGame">Try it</button>
+            <div id="Jumpy" class="GameDiv">
+                <div id="unityContainer" style="width: 960px; height: 600px; margin: auto"></div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
