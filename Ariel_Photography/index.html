@@ -1,0 +1,152 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>
+    TBedwell - Ariel Photography
+  </title>
+  <style>
+      * {
+          box-sizing: border-box;
+      }
+      body {
+          font-family: Courier New, Courier, monospace;
+          font-size: 1.2vw;
+          color: #2B4141;
+          margin: 0;
+      }
+
+      .follow {
+          position: fixed;
+          width: 100%;
+          z-index: 2;
+      }
+
+      .header {
+          padding: 5px;
+          text-align: center;
+          background: #A6DAD7;
+          position: absolute;
+          width: 100%;
+      }
+
+      .navbar {
+          overflow: hidden;
+          background-color: #A6DAD7;
+          width: 100%;
+          position: absolute;
+          margin-top: 85px;
+      }
+
+          .navbar a {
+              float: left;
+              display: block;
+              text-align: center;
+              color: #2B4141;
+              padding: 20px 25px;
+              text-decoration: none;
+          }
+
+              .navbar a.click:hover {
+                  background-color: #293132;
+                  color: #A6DAD7;
+              }
+      .row {
+          display: flex;
+          flex-wrap: wrap;
+      }
+
+      .side {
+          flex: 20%;
+          background-color: #D3EDEB;
+          padding: 20px;
+          font-size: 1vw;
+      }
+
+      .main {
+          flex: 80%;
+          background-color: white;
+          padding: 20px;
+      }
+
+      .dropbtn {
+          display: block;
+          text-align: center;
+          color: #2B4141;
+          padding: 20px 25px;
+          text-decoration: none;
+      }
+
+      .dropdown {
+          display: inline-block;
+          float: left;
+      }
+
+      .dropdown-content {
+          display: none;
+          position: fixed;
+          background-color: #A6DAD7;
+          z-index: 1;
+      }
+
+      .dropdown:hover .dropdown-content {
+          display: block;
+      }
+
+      .dropdown:hover .dropbtn {
+          background-color: #293132;
+          color: #A6DAD7;
+      }
+  </style>
+</head>
+<body>
+    <div class="follow">
+        <div class="header">
+            <a href="file:///C:/Users/thoma/Desktop/TBedwell%20Website/index.html"><img src="Logo.png" alt="TBedwell" height="75"></a>
+        </div>
+    </div>
+    <div class="follow">
+        <div class="navbar">
+            <a href="file:///C:/Users/thoma/Desktop/TBedwell%20Website/index.html" class="click">About Me</a>
+            <a href="file:///C:/Users/thoma/Desktop/TBedwell%20Website/Ariel_Photography/index.html" class="click">Ariel Photography</a>
+            <a href="file:///C:/Users/thoma/Desktop/TBedwell%20Website/Drone_Short_Films/index.html" class="click">Drone Short Films</a>
+            <a href="file:///C:/Users/thoma/Desktop/TBedwell%20Website/Coding_Projects/index.html" class="click">Coding Projects</a>
+            <a href="file:///C:/Users/thoma/Desktop/TBedwell%20Website/Piano/index.html" class="click">Piano</a>
+
+        </div>
+    </div>
+
+    <div style="padding-top: 140px; background-color: #D3EDEB;"></div>
+
+    <div class="row">
+        <div class="side">
+            <h3>About My Ariel Photography</h3>
+            <img src="Drone.png" alt="DJI Mini SE" width="300">
+            <p>
+                I am fully qualified to fly my DJI Mini SE (sub 249g) in the A1 open category.
+                </br></br>I also have a valid Flyer ID allowing me to fly heavier drones (between 250g - 2kg) in the A3 open category.
+                </br></br>I am currently working through an online course with UAVhub towards achieving the A2 CofC (Certificate of Competency).
+                </br></br>This will allow me to fly for commerical purposes aswell as allowing me to operate sub 2kg drones in the A1 sub-category and sub 25kg drones in the A2 sub-category.
+            </p>
+            </br><h3>How It Works</h3>
+            <p>
+                I have recently been attempting to create satellite-like images of public spaces.
+                </br></br>In order to do this, I fly my drone to just under the legal height limit of 120m (400ft) and take a top down photo of the area. I then fly in a grid shaped pattern whilst taking more photos until I have covered the entire area. Once I have finished, I use Piskel software to create one large image of the entire area.
+                </br></br>This animation is helpful to understand how the process works. The 4 pixelated images are taken and merge to reveal the larger image:
+            </p>
+            <div style="text-align: center;">
+                <img src="FaceFormation.gif" alt="Animation of Process" width="250px" style="position: center;">
+            </div>
+        </div>
+        <div class="main">
+            <h2>Ariel Drone Photography Portfolio</h2></br>
+            <p>Wildhern Park, Andover</p><p>My ariel photograph (on the left)</br>Latest Google maps satellite image (on the right) as of August 2023</p>
+            <div style="text-align: center;">
+                <img src="WildhernFull.png" alt="Wildhern Park, Andover" height="800px">
+                <img src="GoogleWildhern.png" alt="Google Maps - Wildhern Park, Andover" height="800px" />
+            </div>
+        </div>
+    </div>
+
+</body>
+</html>
