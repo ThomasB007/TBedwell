@@ -126,7 +126,7 @@
 
     <script src="LogicGates/UnityLoader.js"></script>
     <script>
-        UnityLoader.instantiate("unityContainer", "LogicGates/0.2.json");
+        UnityLoader.instantiate("LogicGatesContainer", "LogicGates/0.2.json");
     </script>
 </head>
 <body>
@@ -134,7 +134,7 @@
         function RevealDiv(DivID) {
             var x = document.getElementById(DivID);
             x.style.display = "block";
-            UnityLoader.instantiate("unityContainer", DivID + "/0.2.json");
+            UnityLoader.instantiate("LogicGatesContainer", "LogicGates/0.2.json");
         }
     </script>
 
@@ -174,7 +174,7 @@
         <div class="main" style="text-align: center;">
             <button onclick="RevealDiv('LogicGates')" class="LoadGame">Try it</button>
             <div id="LogicGates" class="GameDiv">
-                <div id="unityContainer" style="width: 960px; height: 600px; margin: auto"></div>
+                <div id="LogicGatesContainer" style="width: 960px; height: 600px; margin: auto"></div>
             </div>
         </div>
     </div>
