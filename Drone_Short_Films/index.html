@@ -1,0 +1,191 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>
+    TBedwell - Drone Short Films
+  </title>
+  <style>
+      * {
+          box-sizing: border-box;
+      }
+      body {
+          font-family: Courier New, Courier, monospace;
+          font-size: 1.2vw;
+          color: #2B4141;
+          margin: 0;
+      }
+
+      .follow {
+          position: fixed;
+          width: 100%;
+          z-index: 2;
+      }
+
+      .header {
+          padding: 5px;
+          text-align: center;
+          background: #A6DAD7;
+          position: absolute;
+          width: 100%;
+      }
+
+      .navbar {
+          overflow: hidden;
+          background-color: #A6DAD7;
+          width: 100%;
+          position: absolute;
+          margin-top: 85px;
+      }
+
+          .navbar a {
+              float: left;
+              display: block;
+              text-align: center;
+              color: #2B4141;
+              padding: 20px 25px;
+              text-decoration: none;
+          }
+
+              .navbar a.click:hover {
+                  background-color: #293132;
+                  color: #A6DAD7;
+              }
+      .row {
+          display: flex;
+          flex-wrap: wrap;
+      }
+
+      .side {
+          flex: 20%;
+          background-color: #D3EDEB;
+          padding: 20px;
+          font-size: 1vw;
+      }
+
+      .main {
+          flex: 80%;
+          background-color: white;
+          padding: 20px;
+      }
+
+      video {
+          width: 80%;
+      }
+
+      .dropbtn {
+          display: block;
+          text-align: center;
+          color: #2B4141;
+          padding: 20px 25px;
+          text-decoration: none;
+      }
+
+      .dropdown {
+          display: inline-block;
+          float: left;
+      }
+
+      .dropdown-content {
+          display: none;
+          position: fixed;
+          background-color: #A6DAD7;
+          z-index: 1;
+      }
+
+      .dropdown:hover .dropdown-content {
+          display: block;
+      }
+
+      .dropdown:hover .dropbtn {
+          background-color: #293132;
+          color: #A6DAD7;
+      }
+  </style>
+</head>
+<body>
+    <div class="follow">
+        <div class="header">
+            <a href="file:///C:/Users/thoma/Desktop/TBedwell%20Website/index.html"><img src="Logo.png" alt="TBedwell" height="75"></a>
+        </div>
+    </div>
+    <div class="follow">
+        <div class="navbar">
+            <a href="file:///C:/Users/thoma/Desktop/TBedwell%20Website/index.html" class="click">About Me</a>
+            <a href="file:///C:/Users/thoma/Desktop/TBedwell%20Website/Ariel_Photography/index.html" class="click">Ariel Photography</a>
+            <a href="file:///C:/Users/thoma/Desktop/TBedwell%20Website/Drone_Short_Films/index.html" class="click">Drone Short Films</a>
+            <a href="file:///C:/Users/thoma/Desktop/TBedwell%20Website/Coding_Projects/index.html" class="click">Coding Projects</a>
+            <a href="file:///C:/Users/thoma/Desktop/TBedwell%20Website/Piano/index.html" class="click">Piano</a>
+
+        </div>
+    </div>
+
+    <div style="padding-top: 140px; background-color: #D3EDEB;"></div>
+
+    <div class="row">
+        <div class="side">
+        </div>
+        <div class="main" style="text-align: center;">
+            <h2>Drone Short Films</h2>
+        </div>
+    </div>
+
+    <div class="row">
+        <div class="side">
+            <div>
+                <h3>Kefalonia</h3>
+                <p>In July 2023, I went to Kefalonia (a small Greek island) and took the drone to film this:</p>
+            </div>
+        </div>
+        <div class="main" style="text-align: center;">
+            <video width="70%" controls autoplay>
+                <source src="Kefalonia.mp4" type="video/mp4">
+            </video>
+        </div>
+    </div>
+
+    <div class="row">
+        <div class="side">
+            <div>
+                <h3>Exmoor and Dartmoor, DofE</h3>
+                <p>A snippet from our Silver DofE documentary from 2022-23 where we travelled to Exmoor and Dartmoor for a 3 day (2 nights) expedition.</p>
+                <a href="https://youtu.be/qJuHAZVB7Ls">Full video here</a>
+            </div>
+        </div>
+        <div class="main" style="text-align: center;">
+            <video width="70%" controls autoplay>
+                <source src="DofE.mp4" type="video/mp4">
+            </video>
+        </div>
+    </div>
+
+    <div class="row">
+        <div class="side">
+            <div>
+                <h3>LLangrannog, Wales</h3>
+                <p>A short film about my favourite beach in the UK:</p>
+            </div>
+        </div>
+        <div class="main" style="text-align: center;">
+            <video width="70%" controls autoplay>
+                <source src="Llangrannog.mp4" type="video/mp4">
+            </video>
+        </div>
+    </div>
+
+    <div class="row">
+        <div class="side">
+            <div>
+                <h3>Ceredigion Bay, Wales</h3>
+                <p>In July 2022, I took the drone to lots of beaches along Ceredigion Bay and this is one of my first attempts of video editing:</p>
+            </div>
+        </div>
+        <div class="main" style="text-align: center;">
+            <video width="70%" controls autoplay>
+                <source src="Wales.mp4" type="video/mp4">
+            </video>
+        </div>
+    </div>
+
+</body>
+</html>
