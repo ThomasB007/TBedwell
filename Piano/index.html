@@ -1,0 +1,192 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>
+    TBedwell - Piano
+  </title>
+  <style>
+      * {
+          box-sizing: border-box;
+      }
+      body {
+          font-family: Courier New, Courier, monospace;
+          font-size: 1.2vw;
+          color: #2B4141;
+          margin: 0;
+      }
+
+      .follow {
+          position: fixed;
+          width: 100%;
+          z-index: 2;
+      }
+
+      .header {
+          padding: 5px;
+          text-align: center;
+          background: #A6DAD7;
+          position: absolute;
+          width: 100%;
+      }
+
+      .navbar {
+          overflow: hidden;
+          background-color: #A6DAD7;
+          width: 100%;
+          position: absolute;
+          margin-top: 85px;
+      }
+
+          .navbar a {
+              float: left;
+              display: block;
+              text-align: center;
+              color: #2B4141;
+              padding: 20px 25px;
+              text-decoration: none;
+          }
+
+              .navbar a.click:hover {
+                  background-color: #293132;
+                  color: #A6DAD7;
+              }
+      .row {
+          display: flex;
+          flex-wrap: wrap;
+      }
+
+      .side {
+          flex: 20%;
+          background-color: #D3EDEB;
+          padding: 20px;
+          font-size: 1vw;
+      }
+
+      .main {
+          flex: 80%;
+          background-color: white;
+          padding: 20px;
+      }
+
+      video {
+          width: 80%;
+      }
+
+      .dropbtn {
+          display: block;
+          text-align: center;
+          color: #2B4141;
+          padding: 20px 25px;
+          text-decoration: none;
+      }
+
+      .dropdown {
+          display: inline-block;
+          float: left;
+      }
+
+      .dropdown-content {
+          display: none;
+          position: fixed;
+          background-color: #A6DAD7;
+          z-index: 1;
+      }
+
+      .dropdown:hover .dropdown-content {
+          display: block;
+      }
+
+      .dropdown:hover .dropbtn {
+          background-color: #293132;
+          color: #A6DAD7;
+      }
+  </style>
+</head>
+<body>
+    <div class="follow">
+        <div class="header">
+            <a href="file:///C:/Users/thoma/Desktop/TBedwell%20Website/index.html"><img src="Logo.png" alt="TBedwell" height="75"></a>
+        </div>
+    </div>
+    <div class="follow">
+        <div class="navbar">
+            <a href="https://tbedwell.com" class="click">About Me</a>
+            <a href="https://tbedwell.com/Ariel_Photography" class="click">Ariel Photography</a>
+            <a href="https://tbedwell.com/Drone_Short_Films" class="click">Drone Short Films</a>
+            <a href="https://tbedwell.com/Coding_Projects" class="click">Coding Projects</a>
+            <a href="https://tbedwell.com/Piano" class="click">Piano</a>
+
+        </div>
+    </div>
+
+    <div style="padding-top: 140px; background-color: #D3EDEB;"></div>
+
+    <div class="row">
+        <div class="side">
+        </div>
+        <div class="main" style="text-align: center;">
+            <h2>Piano Performance Portfolio</h2>
+        </div>
+    </div>
+
+    <div class="row">
+        <div class="side">
+            <div>
+                <h3>St Pancras Station, London</h3>
+                <p>In June 2023, I performed 2 pieces, Bohemian Rhapsody and Arrival Of The Birds, on the public piano donated by Elton John in St Pancras Station.</p>
+            </div>
+        </div>
+        <div class="main" style="text-align: center;">
+            <video style="width: 35%;" controls autoplay>
+                <source src="Bohemian Rhapsody.mp4" type="video/mp4">
+            </video>
+            <video style="width: 35%;" controls autoplay>
+                <source src="Arrival.mp4" type="video/mp4">
+            </video>
+        </div>
+    </div>
+
+    <div class="row">
+        <div class="side">
+            <div>
+                <h3>Test Valley Brass Winter Concert</h3>
+                <p>In December 2022, I played as a guest pianist to open the Winter Consert for Test Valley Brass.</p>
+            </div>
+        </div>
+        <div class="main" style="text-align: center;">
+            <video width="70%" controls autoplay>
+                <source src="TVB.mp4" type="video/mp4">
+            </video>
+        </div>
+    </div>
+
+    <div class="row">
+        <div class="side">
+            <div>
+                <h3>Moonlight Sonata 1st Movement- Beethoven</h3>
+                <p>April 2020</p>
+            </div>
+        </div>
+        <div class="main" style="text-align: center;">
+            <video width="70%" controls autoplay>
+                <source src="Moonlight.mp4" type="video/mp4">
+            </video>
+        </div>
+    </div>
+
+    <div class="row">
+        <div class="side">
+            <div>
+                <h3>Rome Fiumicino Airport, Italy</h3>
+                <p>I had the pleasure to play on the public piano in Rome Airport in July 2023.</p>
+            </div>
+        </div>
+        <div class="main" style="text-align: center;">
+            <video style="width:40%;" controls autoplay>
+                <source src="Rome.mp4" type="video/mp4">
+            </video>
+        </div>
+    </div>
+</body>
+</html>
